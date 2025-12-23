@@ -2,288 +2,491 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MapReady — Get Found on Google Maps in 24 Hours</title>
-    <meta name="description"
-        content="Stop losing customers who can't find you. Launch your Google Maps profile + website in 24 hours. Fixed $1000 price.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MapReady — Get Found on Google Maps in 24 Hours | Christmas Special 50% Off</title>
+  <meta name="description"
+    content="Stop losing customers who can't find you. Launch your Google Maps profile + website in 24 hours. Christmas Special: $1,000 (normally $2,000). Ends Dec 31.">
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="MapReady — Get Found on Google Maps in 24 Hours">
-    <meta property="og:description"
-        content="Stop losing customers who can't find you. Launch your Google Maps profile + website in 24 hours.">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MapReady — Get Found on Google Maps in 24 Hours">
+  <meta property="og:description"
+    content="Christmas Special: 50% off. Launch your Google Maps profile + website in 24 hours or you don't pay.">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="MapReady — Get Found on Google Maps in 24 Hours">
-    <meta name="twitter:description"
-        content="Stop losing customers who can't find you. Launch your Google Maps profile + website in 24 hours.">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MapReady — Get Found on Google Maps in 24 Hours">
+  <meta name="twitter:description" content="Christmas Special: 50% off. Live in 24 hours or you don't pay.">
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'system-ui', 'sans-serif'],
-                    },
-                },
-            },
-        }
-    </script>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            christmas: {
+              red: '#dc2626',
+              green: '#16a34a',
+            }
+          }
+        },
+      },
+    }
+  </script>
 
-    <!-- Google Fonts: Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <style>
-        /* Critical inline CSS for above-the-fold */
-        body {
-            font-family: 'Inter', system-ui, sans-serif;
-        }
+  <style>
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+    }
 
-        .btn-primary {
-            transition: transform 0.15s ease, box-shadow 0.15s ease;
-        }
+    .btn-primary {
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
 
-        .btn-primary:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        }
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
 
-        .btn-primary:active {
-            transform: translateY(0);
-        }
-    </style>
+    .btn-primary:active {
+      transform: translateY(0);
+    }
+
+    .countdown-box {
+      min-width: 60px;
+    }
+
+    @keyframes pulse-slow {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.7;
+      }
+    }
+
+    .animate-pulse-slow {
+      animation: pulse-slow 2s ease-in-out infinite;
+    }
+  </style>
 </head>
 
 <body class="bg-white text-gray-900 antialiased">
 
-    <!-- Hero Section -->
-    <header class="px-5 pt-8 pb-6 md:pt-12 md:pb-10">
-        <div class="max-w-3xl mx-auto text-center">
-            <!-- Brand -->
-            <p class="text-sm font-medium text-gray-500 mb-6">
-                <a href="https://anchormarianas.com" target="_blank" rel="noopener"
-                    class="hover:text-gray-900 underline underline-offset-2">Anchor</a>'s MapReady
-            </p>
+  <!-- Christmas Banner -->
+  <div class="bg-red-600 text-white text-center py-2 px-4">
+    <p class="text-sm font-semibold">
+      🎄 CHRISTMAS SPECIAL — 50% OFF (Ends Dec 31)
+      <span class="hidden sm:inline">• Only 3 spots left this week</span>
+    </p>
+  </div>
 
-            <!-- Headline -->
-            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight mb-3">
-                Stop Losing Customers<br class="hidden md:block"> Who Can't Find You
-            </h1>
+  <!-- Hero Section -->
+  <header class="px-5 pt-8 pb-6 md:pt-12 md:pb-10">
+    <div class="max-w-3xl mx-auto text-center">
+      <!-- Brand -->
+      <p class="text-sm font-medium text-gray-500 mb-6">
+        <a href="https://anchormarianas.com" target="_blank" rel="noopener"
+          class="hover:text-gray-900 underline underline-offset-2">Anchor</a>'s MapReady
+      </p>
 
-            <!-- Subheadline -->
-            <p class="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-gray-400 mb-8">
-                Launch Your Google Maps Profile + Website in 24 Hours
-            </p>
+      <!-- Headline -->
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight mb-3">
+        Stop Losing Customers<br class="hidden md:block"> Who Can't Find You
+      </h1>
 
-            <!-- Primary CTA -->
-            <a href="https://calendly.com/adamtpang" target="_blank" rel="noopener"
-                class="btn-primary inline-block bg-black text-white text-sm font-semibold px-6 py-3 rounded-full">
-                Get My Business Online in 24h →
-            </a>
+      <!-- Subheadline -->
+      <p class="text-xl md:text-2xl lg:text-3xl font-bold tracking-tight text-gray-400 mb-4">
+        Launch your Google Maps profile + website in 24 hours.
+      </p>
+
+      <!-- Guarantee -->
+      <p class="text-lg md:text-xl font-semibold text-green-600 mb-6">
+        Or you don't pay. ✓
+      </p>
+
+      <!-- Primary CTA -->
+      <a href="https://calendly.com/adamtpang" target="_blank" rel="noopener"
+        class="btn-primary inline-block bg-black text-white text-base font-semibold px-8 py-4 rounded-full mb-4">
+        Get My Free Visibility Audit →
+      </a>
+
+      <!-- Urgency -->
+      <p class="text-sm text-gray-500">
+        ⏰ Only 3 spots left this week
+      </p>
+    </div>
+  </header>
+
+  <!-- Countdown Timer -->
+  <section class="px-5 pb-8">
+    <div class="max-w-md mx-auto">
+      <div class="bg-gray-100 rounded-2xl p-4 text-center">
+        <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Christmas offer expires in</p>
+        <div id="countdown" class="flex justify-center gap-2">
+          <div class="countdown-box bg-white rounded-lg p-3">
+            <div id="days" class="text-2xl font-bold">--</div>
+            <div class="text-xs text-gray-500">Days</div>
+          </div>
+          <div class="countdown-box bg-white rounded-lg p-3">
+            <div id="hours" class="text-2xl font-bold">--</div>
+            <div class="text-xs text-gray-500">Hours</div>
+          </div>
+          <div class="countdown-box bg-white rounded-lg p-3">
+            <div id="minutes" class="text-2xl font-bold">--</div>
+            <div class="text-xs text-gray-500">Mins</div>
+          </div>
+          <div class="countdown-box bg-white rounded-lg p-3">
+            <div id="seconds" class="text-2xl font-bold">--</div>
+            <div class="text-xs text-gray-500">Secs</div>
+          </div>
         </div>
-    </header>
+      </div>
+    </div>
+  </section>
 
-    <!-- Hero Image Placeholder -->
-    <section class="px-5 pb-10">
-        <div class="max-w-xl mx-auto">
-            <div class="aspect-[16/10] bg-gray-100 rounded-2xl flex items-center justify-center">
-                <div class="flex gap-2">
-                    <div class="w-4 h-4 bg-white rounded"></div>
-                    <div class="w-4 h-4 bg-white rounded-full"></div>
-                    <div class="w-4 h-4 bg-white" style="clip-path: polygon(50% 0%, 100% 100%, 0% 100%);"></div>
-                </div>
-            </div>
+  <main>
+    <!-- Problem Section -->
+    <section id="problem" class="px-5 py-10 md:py-16 bg-gray-50">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-4">
+          Every Day You're Invisible = Customers Going to Competitors
+        </h2>
+        <p class="text-lg md:text-xl text-gray-500 mb-6">
+          Right now, someone is searching for your business type in your city.<br>
+          If you're not on Google Maps, you don't exist to them.
+        </p>
+
+        <!-- Pain Points -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center text-left max-w-md mx-auto">
+          <div class="flex items-start gap-2">
+            <span class="text-red-500">✗</span>
+            <span class="text-gray-600">No website = no credibility</span>
+          </div>
+          <div class="flex items-start gap-2">
+            <span class="text-red-500">✗</span>
+            <span class="text-gray-600">No Google = no traffic</span>
+          </div>
+          <div class="flex items-start gap-2">
+            <span class="text-red-500">✗</span>
+            <span class="text-gray-600">No reviews = no trust</span>
+          </div>
         </div>
+      </div>
     </section>
 
-    <main>
-        <!-- Problem Section -->
-        <section id="problem" class="px-5 py-10 md:py-16">
-            <div class="max-w-2xl mx-auto text-center">
-                <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-2">
-                    Every Day Without Google Maps = Customers Going to Competitors
-                </h2>
-                <p class="text-2xl md:text-3xl font-bold tracking-tight text-gray-400">
-                    If they can't find you online, they'll find someone else.
-                </p>
-            </div>
-        </section>
+    <!-- Solution Section -->
+    <section id="solution" class="px-5 py-10 md:py-16">
+      <div class="max-w-2xl mx-auto text-center">
+        <p class="text-sm font-semibold text-green-600 uppercase tracking-wide mb-2">The Solution</p>
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-2">
+          The MapReady 24-Hour Package
+        </h2>
+        <p class="text-xl md:text-2xl font-bold tracking-tight text-gray-400">
+          Everything you need to get found online — done in one day.
+        </p>
+      </div>
+    </section>
 
-        <!-- Solution Section -->
-        <section id="solution" class="px-5 py-10 md:py-16">
-            <div class="max-w-2xl mx-auto text-center">
-                <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-2">
-                    MapReady: Your 24-Hour Launch Package
-                </h2>
-                <p class="text-2xl md:text-3xl font-bold tracking-tight text-gray-400">
-                    We build it. We optimize it. You get customers.
-                </p>
-            </div>
-        </section>
+    <!-- Features Grid -->
+    <section id="features" class="px-5 py-10 md:py-16">
+      <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
 
-        <!-- Features Grid -->
-        <section id="features" class="px-5 py-10 md:py-16">
-            <div class="max-w-4xl mx-auto">
-                <!-- Row 1: For Business Owners + Website in 1 Day -->
-                <div class="grid md:grid-cols-2 gap-5 mb-5">
-                    <!-- For Business Owners -->
-                    <article class="order-2 md:order-1">
-                        <div class="aspect-square bg-gray-100 rounded-2xl flex items-center justify-center mb-4">
-                            <div class="w-24 h-24 bg-white rounded-lg"></div>
-                        </div>
-                        <h3 class="text-xl md:text-2xl font-semibold tracking-tight mb-2">For business owners.</h3>
-                        <p class="text-lg md:text-xl text-gray-500">
-                            Want an online presence and losing customers without it?
-                        </p>
-                    </article>
+        <!-- Feature 1: Website -->
+        <article class="bg-gray-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 text-2xl">
+            🌐
+          </div>
+          <h3 class="text-xl font-semibold tracking-tight mb-2">Professional Website</h3>
+          <p class="text-gray-500">
+            Mobile-optimized, AI-ready. Shows up in Google, ChatGPT, Siri, and more.
+          </p>
+        </article>
 
-                    <!-- Website in 1 Day -->
-                    <article class="order-1 md:order-2">
-                        <div class="aspect-square bg-gray-100 rounded-2xl flex items-center justify-center mb-4">
-                            <div class="w-24 h-24 bg-white rounded-full"></div>
-                        </div>
-                        <h3 class="text-xl md:text-2xl font-semibold tracking-tight mb-2">Website in 24 hours.</h3>
-                        <p class="text-lg md:text-xl text-gray-500">
-                            Copy, design, launch—ready for AI search and Google.
-                        </p>
-                    </article>
-                </div>
+        <!-- Feature 2: Google Maps -->
+        <article class="bg-gray-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 text-2xl">
+            📍
+          </div>
+          <h3 class="text-xl font-semibold tracking-tight mb-2">Google Maps Setup</h3>
+          <p class="text-gray-500">
+            Your business on the map. Customers find you when they search "near me."
+          </p>
+        </article>
 
-                <!-- Row 2: 3-Column Features -->
-                <div class="grid md:grid-cols-3 gap-5">
-                    <!-- Google Maps Setup -->
-                    <article>
-                        <div class="aspect-square bg-gray-100 rounded-2xl flex items-center justify-center mb-4">
-                            <div class="w-24 h-24 bg-white rounded-lg"></div>
-                        </div>
-                        <h3 class="text-lg md:text-xl font-semibold tracking-tight mb-2">Google Maps setup.</h3>
-                        <p class="text-base md:text-lg text-gray-500">
-                            We add your site to Google Maps—findable instantly.
-                        </p>
-                    </article>
+        <!-- Feature 3: Reviews Report -->
+        <article class="bg-gray-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 text-2xl">
+            ⭐
+          </div>
+          <h3 class="text-xl font-semibold tracking-tight mb-2">Google Reviews Report</h3>
+          <p class="text-gray-500">
+            Actionable insights to get more reviews and beat competitors.
+          </p>
+        </article>
 
-                    <!-- Google Reviews Report -->
-                    <article>
-                        <div class="aspect-square bg-gray-100 rounded-2xl flex items-center justify-center mb-4">
-                            <div class="w-24 h-24 bg-white rounded-full"></div>
-                        </div>
-                        <h3 class="text-lg md:text-xl font-semibold tracking-tight mb-2">Google Reviews report.</h3>
-                        <p class="text-base md:text-lg text-gray-500">
-                            Actionable insights to improve and gain customers.
-                        </p>
-                    </article>
+        <!-- Feature 4: 24h Delivery -->
+        <article class="bg-gray-50 rounded-2xl p-6">
+          <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 text-2xl">
+            ⚡
+          </div>
+          <h3 class="text-xl font-semibold tracking-tight mb-2">Live in 24 Hours</h3>
+          <p class="text-gray-500">
+            Not weeks. Not months. Tomorrow. Or you don't pay.
+          </p>
+        </article>
 
-                    <!-- Fixed Price -->
-                    <article>
-                        <div class="aspect-square bg-gray-100 rounded-2xl flex items-center justify-center mb-4">
-                            <div class="w-6 h-6 bg-white" style="clip-path: polygon(50% 0%, 100% 100%, 0% 100%);"></div>
-                        </div>
-                        <h3 class="text-lg md:text-xl font-semibold tracking-tight mb-2">Fixed $1000 price.</h3>
-                        <p class="text-base md:text-lg text-gray-500">
-                            Flat rate. No surprises. No hidden fees.
-                        </p>
-                    </article>
-                </div>
-            </div>
-        </section>
+      </div>
+    </section>
 
-        <!-- Pricing Section -->
-        <section id="pricing" class="px-5 py-10 md:py-16">
-            <div class="max-w-4xl mx-auto">
-                <!-- Section Header -->
-                <div class="text-center mb-8">
-                    <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-2">The Offer</h2>
-                    <p class="text-2xl md:text-3xl font-bold tracking-tight text-gray-400">
-                        One day. One price. One solution.
-                    </p>
-                </div>
+    <!-- Before/After Section -->
+    <section id="results" class="px-5 py-10 md:py-16 bg-gray-50">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-center mb-8">
+          Before MapReady vs. After
+        </h2>
 
-                <!-- Pricing Card -->
-                <div class="max-w-xs mx-auto">
-                    <div class="bg-gray-100 rounded-3xl p-5">
-                        <p class="text-sm font-medium text-gray-500 mb-1">MapReady 24h Package</p>
-                        <p class="text-3xl font-bold tracking-tight mb-4">$1000</p>
+        <div class="grid md:grid-cols-2 gap-4">
+          <!-- Before -->
+          <div class="bg-white rounded-2xl p-6 border-2 border-red-100">
+            <p class="text-sm font-semibold text-red-600 uppercase tracking-wide mb-4">Before</p>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-2">
+                <span class="text-red-500">✗</span>
+                <span class="text-gray-600">Invisible on Google Maps</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-red-500">✗</span>
+                <span class="text-gray-600">No website</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-red-500">✗</span>
+                <span class="text-gray-600">Zero online reviews</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-red-500">✗</span>
+                <span class="text-gray-600">Losing customers daily</span>
+              </li>
+            </ul>
+          </div>
 
-                        <ul class="space-y-2">
-                            <li class="flex items-center gap-3">
-                                <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 10 7" fill="none">
-                                    <path d="M1 3.5L3.5 6L9 0.5" stroke="#999" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                                <span class="text-sm text-gray-500">1-page website</span>
-                            </li>
-                            <li class="flex items-center gap-3">
-                                <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 10 7" fill="none">
-                                    <path d="M1 3.5L3.5 6L9 0.5" stroke="#999" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                                <span class="text-sm text-gray-500">SEO optimized & launched</span>
-                            </li>
-                            <li class="flex items-center gap-3">
-                                <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 10 7" fill="none">
-                                    <path d="M1 3.5L3.5 6L9 0.5" stroke="#999" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                                <span class="text-sm text-gray-500">Google Maps + Reviews report</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section id="cta" class="px-5 py-10 md:py-16 border-t border-gray-200">
-            <div class="max-w-2xl mx-auto text-center">
-                <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-2">
-                    Ready to Get Found?
-                </h2>
-                <p class="text-lg md:text-xl text-gray-500 mb-6">
-                    Book a quick call or message us on WhatsApp. We'll have you live in 24 hours.
-                </p>
-
-                <!-- CTA Buttons -->
-                <div class="flex flex-col sm:flex-row gap-3 justify-center">
-                    <a href="https://calendly.com/adamtpang" target="_blank" rel="noopener"
-                        class="btn-primary inline-block bg-black text-white text-sm font-semibold px-6 py-3 rounded-full text-center">
-                        Book on Calendly →
-                    </a>
-                    <a href="https://wa.me/16716862020" target="_blank" rel="noopener"
-                        class="btn-primary inline-block bg-gray-100 text-gray-900 text-sm font-semibold px-6 py-3 rounded-full text-center hover:bg-gray-200">
-                        Message on WhatsApp
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="px-5 py-10 md:py-16">
-        <div class="max-w-4xl mx-auto">
-            <div class="flex flex-col md:flex-row md:items-end gap-6">
-                <div class="flex-1">
-                    <p class="text-sm font-semibold mb-1">Site by Adam Tomas</p>
-                    <a href="https://adamtomas.fun" target="_blank" rel="noopener"
-                        class="text-sm text-gray-500 hover:text-gray-900">
-                        adamtomas.fun
-                    </a>
-                </div>
-                <div class="aspect-[16/10] w-full max-w-sm bg-gray-100 rounded-2xl flex items-center justify-center">
-                    <div class="flex gap-2">
-                        <div class="w-4 h-4 bg-white rounded"></div>
-                        <div class="w-4 h-4 bg-white rounded-full"></div>
-                        <div class="w-4 h-4 bg-white" style="clip-path: polygon(50% 0%, 100% 100%, 0% 100%);"></div>
-                    </div>
-                </div>
-            </div>
+          <!-- After -->
+          <div class="bg-white rounded-2xl p-6 border-2 border-green-100">
+            <p class="text-sm font-semibold text-green-600 uppercase tracking-wide mb-4">After</p>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-2">
+                <span class="text-green-500">✓</span>
+                <span class="text-gray-600">#1 result for your business type</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500">✓</span>
+                <span class="text-gray-600">Professional site live in 24h</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500">✓</span>
+                <span class="text-gray-600">Review collection system set up</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500">✓</span>
+                <span class="text-gray-600">Phones ringing, DMs coming in</span>
+              </li>
+            </ul>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="px-5 py-10 md:py-16">
+      <div class="max-w-md mx-auto">
+        <!-- Section Header -->
+        <div class="text-center mb-6">
+          <p class="text-sm font-semibold text-red-600 uppercase tracking-wide mb-2">🎄 Christmas Special</p>
+          <h2 class="text-2xl md:text-3xl font-bold tracking-tight">
+            One day. One price. One solution.
+          </h2>
+        </div>
+
+        <!-- Pricing Card -->
+        <div class="bg-gray-900 text-white rounded-3xl p-6 relative overflow-hidden">
+          <!-- Badge -->
+          <div class="absolute top-4 right-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+            50% OFF
+          </div>
+
+          <p class="text-sm font-medium text-gray-400 mb-1">MapReady 24h Package</p>
+          <div class="flex items-baseline gap-2 mb-4">
+            <span class="text-4xl font-bold">$1,000</span>
+            <span class="text-lg text-gray-500 line-through">$2,000</span>
+          </div>
+
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-center gap-3">
+              <svg class="w-5 h-5 flex-shrink-0 text-green-400" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span>Professional 1-page website</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-5 h-5 flex-shrink-0 text-green-400" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span>Google Maps listing setup</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-5 h-5 flex-shrink-0 text-green-400" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span>Google Reviews report</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-5 h-5 flex-shrink-0 text-green-400" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span>24-hour delivery guarantee</span>
+            </li>
+          </ul>
+
+          <a href="https://calendly.com/adamtpang" target="_blank" rel="noopener"
+            class="block w-full bg-white text-gray-900 text-center font-semibold py-4 rounded-xl hover:bg-gray-100 transition-colors">
+            Claim My Spot →
+          </a>
+        </div>
+
+        <!-- Add-on -->
+        <div class="mt-4 bg-gray-100 rounded-2xl p-4 text-center">
+          <p class="text-sm text-gray-600">
+            <span class="font-semibold">Add-on:</span> $100 for 10 website updates anytime
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guarantee Section with Face -->
+    <section id="guarantee" class="px-5 py-10 md:py-16 bg-gray-50">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-4">
+          My Promise: Live in 24 Hours or You Don't Pay
+        </h2>
+        <p class="text-lg text-gray-500 mb-6">
+          I'm not a faceless agency. I'm Adam — and I personally build every site.
+        </p>
+
+        <!-- Photo placeholder -->
+        <div class="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center">
+          <span class="text-3xl">👨‍💻</span>
+        </div>
+
+        <p class="text-gray-600 italic mb-2">
+          "I've helped 50+ local businesses get found online. Yours is next."
+        </p>
+        <p class="text-sm font-semibold text-gray-900">
+          — Adam Tomas, MapReady
+        </p>
+
+        <!-- Guarantee Badge -->
+        <div class="mt-6 inline-flex items-center gap-2 bg-green-50 text-green-700 px-4 py-2 rounded-full">
+          <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd" />
+          </svg>
+          <span class="font-semibold">24-Hour Guarantee</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="cta" class="px-5 py-10 md:py-16 border-t border-gray-200">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-2">
+          Ready to Get Found?
+        </h2>
+        <p class="text-lg text-gray-500 mb-6">
+          Book a 15-minute call or message me directly. We'll have you live in 24 hours.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="https://calendly.com/adamtpang" target="_blank" rel="noopener"
+            class="btn-primary inline-flex items-center justify-center gap-2 bg-black text-white text-base font-semibold px-8 py-4 rounded-full">
+            <span>📅</span> Book on Calendly
+          </a>
+          <a href="https://wa.me/16716862020" target="_blank" rel="noopener"
+            class="btn-primary inline-flex items-center justify-center gap-2 bg-green-600 text-white text-base font-semibold px-8 py-4 rounded-full hover:bg-green-700">
+            <span>💬</span> Message on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="px-5 py-10 border-t border-gray-100">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-sm text-gray-500">
+        Site by <a href="https://adamtomas.fun" target="_blank" rel="noopener"
+          class="font-medium text-gray-900 hover:underline">Adam Tomas</a> ·
+        <a href="https://anchormarianas.com" target="_blank" rel="noopener" class="hover:underline">Anchor</a>'s
+        MapReady
+      </p>
+    </div>
+  </footer>
+
+  <!-- Countdown Timer Script -->
+  <script>
+      (function () {
+        // Set countdown to Dec 31, 2025 at midnight local time
+        const targetDate = new Date('2025-12-31T23:59:59').getTime();
+
+        function updateCountdown() {
+          const now = new Date().getTime();
+          const diff = targetDate - now;
+
+          if (diff <= 0) {
+            document.getElementById('days').textContent = '0';
+            document.getElementById('hours').textContent = '0';
+            document.getElementById('minutes').textContent = '0';
+            document.getElementById('seconds').textContent = '0';
+            return;
+          }
+
+          const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+          document.getElementById('days').textContent = days;
+          document.getElementById('hours').textContent = hours;
+          document.getElementById('minutes').textContent = minutes;
+          document.getElementById('seconds').textContent = seconds;
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+      })();
+  </script>
 
 </body>
 
