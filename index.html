@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>sitefast.pro: Get Found on Google Maps in 24 Hours | New Year Special 50% Off</title>
+  <title>sitefast.pro: Get a Professional Website in 24 Hours | New Year Special 50% Off</title>
   <meta name="description"
-    content="Stop losing customers who can't find you. Launch your Google Maps profile + website in 24 hours. New Year Special: $1,000 (normally $2,000). Ends Jan 1.">
+    content="Stop losing customers who can't find you. Launch your professional website in 24 hours. New Year Special: $1,000 (normally $2,000). Ends Jan 1.">
 
   <!-- Favicon with map emoji -->
   <link rel="icon"
@@ -14,14 +14,14 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="sitefast.pro: Get Found on Google Maps in 24 Hours">
+  <meta property="og:title" content="sitefast.pro: Get a Professional Website in 24 Hours">
   <meta property="og:description"
-    content="New Year Special: 50% off. Launch your Google Maps profile + website in 24 hours or you don't pay.">
+    content="New Year Special: 50% off. Launch your professional website in 24 hours or you don't pay.">
   <meta property="og:image" content="https://i.postimg.cc/XYFh4cZQ/merlion.jpg">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="sitefast.pro: Get Found on Google Maps in 24 Hours">
+  <meta name="twitter:title" content="sitefast.pro: Get a Professional Website in 24 Hours">
   <meta name="twitter:description" content="New Year Special: 50% off. Live in 24 hours or you don't pay.">
 
   <!-- Tailwind CSS -->
@@ -46,6 +46,8 @@
   <style>
     body {
       font-family: 'Inter', system-ui, sans-serif;
+      background: linear-gradient(180deg, #e8f5e9 0%, #e3f2fd 50%, #f5f5f5 100%);
+      background-attachment: fixed;
     }
 
     .btn-primary {
@@ -60,6 +62,45 @@
     .btn-primary:active {
       transform: translateY(0);
     }
+
+    /* Fake Google Maps style */
+    .map-bg {
+      background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 25%, #a5d6a7 50%, #81c784 75%, #66bb6a 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .map-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+
+    .map-road {
+      position: absolute;
+      background: #fff;
+      opacity: 0.6;
+    }
+
+    .cloud-pin {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
   </style>
 </head>
 
@@ -67,7 +108,7 @@
 
   <!-- New Year Banner -->
   <div class="bg-red-600 text-white py-2 px-4">
-    <div class="max-w-3xl mx-auto flex items-center justify-between text-sm font-medium">
+    <div class="max-w-4xl mx-auto flex items-center justify-between text-sm font-medium">
       <span>🎉 New Year Special: 50% OFF</span>
       <span>Ends Jan 1</span>
     </div>
@@ -75,210 +116,224 @@
 
   <!-- Header -->
   <header class="bg-white border-b border-gray-200">
-    <div class="max-w-3xl mx-auto px-5 py-4 flex items-center justify-between">
+    <div class="max-w-4xl mx-auto px-5 py-4 flex items-center justify-between">
       <div>
         <a href="https://anchormarianas.com" target="_blank" rel="noopener"
           class="text-xs text-gray-400 hover:text-gray-600">Anchor</a>
         <span class="text-xs text-gray-400"> / </span>
         <span class="font-semibold">📍 sitefast.pro</span>
       </div>
-      <a href="https://wa.me/16716862020" target="_blank" rel="noopener"
-        class="btn-primary bg-green-600 text-white text-sm font-medium px-4 py-2 rounded-full hover:bg-green-700">
-        💬 WhatsApp
-      </a>
     </div>
   </header>
 
-  <main class="max-w-3xl mx-auto px-5 py-8 space-y-6">
+  <!-- Hero Map Section -->
+  <section class="map-bg h-64 md:h-80 relative">
+    <!-- Fake roads -->
+    <div class="map-road h-2 w-full top-1/3 left-0"></div>
+    <div class="map-road h-2 w-full top-2/3 left-0"></div>
+    <div class="map-road w-2 h-full top-0 left-1/4"></div>
+    <div class="map-road w-2 h-full top-0 left-3/4"></div>
 
-    <!-- Hero Card -->
-    <section class="bg-white rounded-2xl border border-gray-200 p-6">
-      <p id="spots-counter" class="text-sm font-medium text-red-600 mb-2">⚡ Limited: <span id="spots-left">7</span>
-        spots left this month</p>
-      <h1 class="text-2xl md:text-3xl font-bold tracking-tight mb-2">
-        Stop Losing Customers Who Can't Find You
-      </h1>
-      <p class="text-lg text-gray-500 mb-4">
-        Launch your Google Maps profile + website in 24 hours. Or you don't pay.
-      </p>
-      <a href="https://wa.me/16716862020?text=Hi%20Adam%2C%20I'm%20interested%20in%20the%20sitefast.pro%20package"
-        target="_blank" rel="noopener"
-        class="btn-primary inline-block bg-green-600 text-white font-semibold px-6 py-3 rounded-full hover:bg-green-700">
-        💬 Message Me on WhatsApp →
-      </a>
-    </section>
-
-    <!-- Countdown Card -->
-    <section class="bg-white rounded-2xl border border-gray-200 p-6">
-      <div class="flex items-center justify-between flex-wrap gap-4">
-        <div>
-          <p class="text-sm font-medium text-gray-500">New Year offer expires</p>
-          <p class="text-lg font-bold text-red-600">January 1, 2025</p>
+    <!-- Cloud Pin -->
+    <div class="absolute inset-0 flex items-center justify-center">
+      <div class="cloud-pin text-center">
+        <div class="bg-white rounded-2xl shadow-2xl p-4 md:p-6 border-4 border-green-500">
+          <div class="text-3xl md:text-4xl mb-2">☁️</div>
+          <p class="font-bold text-lg md:text-xl text-gray-900">sitefast.pro</p>
+          <p class="text-sm text-gray-500">📍 Located in the Cloud</p>
         </div>
+        <div
+          class="w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-green-500 mx-auto">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="max-w-4xl mx-auto px-5 py-8">
+
+    <!-- Hero + Countdown Row -->
+    <div class="grid md:grid-cols-2 gap-4 mb-4">
+      <!-- Hero Card -->
+      <section class="bg-white rounded-2xl border border-gray-200 p-6">
+        <p id="spots-counter" class="text-sm font-medium text-red-600 mb-2">⚡ Limited: <span id="spots-left">7</span>
+          spots left this month</p>
+        <h1 class="text-2xl font-bold tracking-tight mb-2">
+          Stop Losing Customers Who Can't Find You
+        </h1>
+        <p class="text-gray-500 mb-4">
+          Launch your professional website in 24 hours. Or you don't pay.
+        </p>
+        <a href="https://wa.me/16716862020?text=Hi%20Adam%2C%20I'm%20interested%20in%20the%20sitefast.pro%20package"
+          target="_blank" rel="noopener"
+          class="btn-primary inline-block bg-green-600 text-white font-semibold px-5 py-2.5 rounded-full hover:bg-green-700 text-sm">
+          💬 Message Me on WhatsApp →
+        </a>
+      </section>
+
+      <!-- Countdown Card -->
+      <section class="bg-white rounded-2xl border border-gray-200 p-6 flex flex-col justify-center">
+        <p class="text-sm font-medium text-gray-500 mb-1">New Year offer expires</p>
+        <p class="text-lg font-bold text-red-600 mb-4">January 1, 2025</p>
         <div id="countdown" class="flex gap-2 text-center">
-          <div class="bg-gray-100 rounded-lg px-3 py-2 min-w-[50px]">
+          <div class="bg-gray-100 rounded-lg px-3 py-2 flex-1">
             <div id="days" class="text-xl font-bold">--</div>
             <div class="text-xs text-gray-500">Days</div>
           </div>
-          <div class="bg-gray-100 rounded-lg px-3 py-2 min-w-[50px]">
+          <div class="bg-gray-100 rounded-lg px-3 py-2 flex-1">
             <div id="hours" class="text-xl font-bold">--</div>
             <div class="text-xs text-gray-500">Hrs</div>
           </div>
-          <div class="bg-gray-100 rounded-lg px-3 py-2 min-w-[50px]">
+          <div class="bg-gray-100 rounded-lg px-3 py-2 flex-1">
             <div id="minutes" class="text-xl font-bold">--</div>
             <div class="text-xs text-gray-500">Min</div>
           </div>
-          <div class="bg-gray-100 rounded-lg px-3 py-2 min-w-[50px]">
+          <div class="bg-gray-100 rounded-lg px-3 py-2 flex-1">
             <div id="seconds" class="text-xl font-bold">--</div>
             <div class="text-xs text-gray-500">Sec</div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
-    <!-- Problem Card -->
-    <section class="bg-white rounded-2xl border border-gray-200 p-6">
-      <h2 class="font-bold text-lg mb-3">The Problem</h2>
-      <p class="text-gray-600 mb-4">
-        Every day you're invisible online, customers are choosing your competitors instead.
-      </p>
-      <ul class="space-y-2 text-gray-600">
-        <li class="flex items-start gap-2">
-          <span class="text-red-500 mt-0.5">✗</span>
-          <span>No website = no credibility</span>
-        </li>
-        <li class="flex items-start gap-2">
-          <span class="text-red-500 mt-0.5">✗</span>
-          <span>Not on Google Maps = invisible to "near me" searches</span>
-        </li>
-        <li class="flex items-start gap-2">
-          <span class="text-red-500 mt-0.5">✗</span>
-          <span>No reviews = customers don't trust you</span>
-        </li>
-      </ul>
-    </section>
+    <!-- Problem + Solution Row -->
+    <div class="grid md:grid-cols-2 gap-4 mb-4">
+      <!-- Problem Card -->
+      <section class="bg-white rounded-2xl border border-gray-200 p-6">
+        <h2 class="font-bold text-lg mb-3">The Problem</h2>
+        <p class="text-gray-600 mb-4">
+          Every day you're invisible online, customers are choosing your competitors.
+        </p>
+        <ul class="space-y-2 text-gray-600">
+          <li class="flex items-start gap-2">
+            <span class="text-red-500 mt-0.5">✗</span>
+            <span>No website = no credibility</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-red-500 mt-0.5">✗</span>
+            <span>Invisible to "near me" searches</span>
+          </li>
+        </ul>
+      </section>
 
-    <!-- Solution Card -->
-    <section class="bg-white rounded-2xl border border-gray-200 p-6">
-      <h2 class="font-bold text-lg mb-3">The Solution: sitefast.pro 24h Package</h2>
-      <p class="text-gray-600 mb-4">
-        Everything you need to get found online. Done in one day.
-      </p>
-      <div class="grid sm:grid-cols-2 gap-4">
-        <div class="bg-gray-50 rounded-xl p-4">
-          <p class="font-medium mb-1">🌐 Professional Website</p>
-          <p class="text-sm text-gray-500">Mobile-optimized, AI-ready</p>
-        </div>
-        <div class="bg-gray-50 rounded-xl p-4">
-          <p class="font-medium mb-1">📍 Google Maps Setup</p>
-          <p class="text-sm text-gray-500">Show up in "near me" searches</p>
-        </div>
-        <div class="bg-gray-50 rounded-xl p-4">
-          <p class="font-medium mb-1">⭐ Reviews Report</p>
-          <p class="text-sm text-gray-500">Actionable insights to grow</p>
-        </div>
-        <div class="bg-gray-50 rounded-xl p-4">
-          <p class="font-medium mb-1">⚡ 24h Delivery</p>
-          <p class="text-sm text-gray-500">Live tomorrow or you don't pay</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Before/After Card -->
-    <section class="bg-white rounded-2xl border border-gray-200 p-6">
-      <h2 class="font-bold text-lg mb-4">Before vs. After</h2>
-      <div class="grid sm:grid-cols-2 gap-4">
-        <div class="bg-red-50 rounded-xl p-4 border border-red-100">
-          <p class="text-sm font-medium text-red-600 mb-2">Before</p>
-          <ul class="space-y-1 text-sm text-gray-600">
-            <li>• Invisible on Google Maps</li>
-            <li>• No website</li>
-            <li>• Zero online reviews</li>
-            <li>• Losing customers daily</li>
-          </ul>
-        </div>
-        <div class="bg-green-50 rounded-xl p-4 border border-green-100">
-          <p class="text-sm font-medium text-green-600 mb-2">After</p>
-          <ul class="space-y-1 text-sm text-gray-600">
-            <li>• #1 for your business type</li>
-            <li>• Professional site live</li>
-            <li>• Review system set up</li>
-            <li>• Phones ringing</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pricing Card -->
-    <section class="bg-gray-900 text-white rounded-2xl p-6">
-      <div class="flex items-start justify-between mb-4">
-        <div>
-          <p class="text-sm text-gray-400">sitefast.pro 24h Package</p>
-          <div class="flex items-baseline gap-2">
-            <span class="text-3xl font-bold">$1,000</span>
-            <span class="text-gray-500 line-through">$2,000</span>
+      <!-- Solution Card -->
+      <section class="bg-white rounded-2xl border border-gray-200 p-6">
+        <h2 class="font-bold text-lg mb-3">The Solution</h2>
+        <p class="text-gray-600 mb-4">
+          Everything you need to get found online. Done in one day.
+        </p>
+        <div class="space-y-3">
+          <div class="bg-gray-50 rounded-xl p-3">
+            <p class="font-medium">🌐 Professional Website</p>
+            <p class="text-sm text-gray-500">Mobile-optimized, AI-ready</p>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-3">
+            <p class="font-medium">⚡ 24h Delivery</p>
+            <p class="text-sm text-gray-500">Live tomorrow or you don't pay</p>
           </div>
         </div>
-        <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">50% OFF</span>
-      </div>
-      <ul class="space-y-2 mb-6 text-gray-300">
-        <li class="flex items-center gap-2">
-          <svg class="w-4 h-4 text-green-400" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd"
-              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-              clip-rule="evenodd" />
-          </svg>
-          <span>Professional 1-page website</span>
-        </li>
-        <li class="flex items-center gap-2">
-          <svg class="w-4 h-4 text-green-400" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd"
-              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-              clip-rule="evenodd" />
-          </svg>
-          <span>Google Maps listing setup</span>
-        </li>
-        <li class="flex items-center gap-2">
-          <svg class="w-4 h-4 text-green-400" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd"
-              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-              clip-rule="evenodd" />
-          </svg>
-          <span>Google Reviews report</span>
-        </li>
-        <li class="flex items-center gap-2">
-          <svg class="w-4 h-4 text-green-400" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd"
-              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-              clip-rule="evenodd" />
-          </svg>
-          <span>24-hour delivery guarantee</span>
-        </li>
-      </ul>
-      <a href="https://buy.stripe.com/9B63cv7Z068B6ogfgZaMU0c" target="_blank" rel="noopener"
-        class="block w-full bg-white text-gray-900 text-center font-semibold py-3 rounded-xl hover:bg-gray-100 transition-colors mb-3">
-        💳 Pay Now & Get Started →
-      </a>
-      <p class="text-center text-sm text-gray-400">You'll enter your WhatsApp number at checkout</p>
-    </section>
+      </section>
+    </div>
 
-    <!-- Guarantee Card -->
-    <section class="bg-white rounded-2xl border border-gray-200 p-6">
-      <div class="flex gap-4 items-start">
-        <img src="https://i.postimg.cc/XYFh4cZQ/merlion.jpg" alt="Adam Tomas"
-          class="w-20 h-20 rounded-full object-cover object-top border-2 border-white shadow flex-shrink-0">
-        <div>
-          <h2 class="font-bold text-lg mb-1">My Promise</h2>
-          <p class="text-gray-600 mb-2">
-            Live in 24 hours or you don't pay. I'm not a faceless agency. I'm Adam, and I personally build every site.
-          </p>
-          <p class="text-sm font-medium text-gray-900">Adam Tomas, sitefast.pro</p>
+    <!-- How It Works + What Changes Row -->
+    <div class="grid md:grid-cols-2 gap-4 mb-4">
+      <!-- How It Works Card -->
+      <section class="bg-white rounded-2xl border border-gray-200 p-6">
+        <h2 class="font-bold text-lg mb-4">How It Works</h2>
+        <div class="space-y-3">
+          <div class="flex gap-3">
+            <div
+              class="flex-shrink-0 w-7 h-7 bg-green-100 text-green-700 rounded-full flex items-center justify-center font-bold text-xs">
+              1</div>
+            <div>
+              <a href="https://wa.me/16716862020?text=Hi%20Adam%2C%20I'm%20interested%20in%20the%20sitefast.pro%20package"
+                target="_blank" rel="noopener"
+                class="inline-block bg-green-600 text-white font-medium text-xs px-3 py-1.5 rounded-full hover:bg-green-700 transition-colors">
+                💬 Message me on WhatsApp
+              </a>
+              <span class="text-green-600 text-xs ml-1">← where you are now</span>
+              <p class="text-xs text-gray-500 mt-1">Tell me about your business</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <div
+              class="flex-shrink-0 w-7 h-7 bg-green-100 text-green-700 rounded-full flex items-center justify-center font-bold text-xs">
+              2</div>
+            <div>
+              <p class="font-medium text-gray-900 text-sm">Send me your info</p>
+              <p class="text-xs text-gray-500">Name, phone, address, photos</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <div
+              class="flex-shrink-0 w-7 h-7 bg-green-100 text-green-700 rounded-full flex items-center justify-center font-bold text-xs">
+              3</div>
+            <div>
+              <p class="font-medium text-gray-900 text-sm">Pay & I get to work</p>
+              <p class="text-xs text-gray-500">Secure payment via Stripe</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <div
+              class="flex-shrink-0 w-7 h-7 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-xs">
+              4</div>
+            <div>
+              <p class="font-medium text-gray-900 text-sm">Site goes live in 24h</p>
+              <p class="text-xs text-gray-500">Ready to share!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- What Changes Card -->
+      <section class="bg-white rounded-2xl border border-gray-200 p-6">
+        <h2 class="font-bold text-lg mb-4">What Changes</h2>
+        <div class="grid grid-cols-2 gap-3">
+          <div class="bg-red-50 rounded-xl p-3 border border-red-100">
+            <p class="text-xs font-medium text-red-600 mb-2">Before</p>
+            <ul class="space-y-1 text-xs text-gray-600">
+              <li>• Invisible online</li>
+              <li>• No website</li>
+              <li>• Losing customers</li>
+            </ul>
+          </div>
+          <div class="bg-green-50 rounded-xl p-3 border border-green-100">
+            <p class="text-xs font-medium text-green-600 mb-2">After</p>
+            <ul class="space-y-1 text-xs text-gray-600">
+              <li>• #1 for your niche</li>
+              <li>• Pro site live</li>
+              <li>• Phones ringing</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Before/After Visual Card (Full Width) -->
+    <section class="bg-white rounded-2xl border border-gray-200 p-6 mb-4">
+      <h2 class="font-bold text-lg mb-4">Real Results: Before vs. After</h2>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div class="space-y-2">
+          <p class="text-sm font-medium text-red-600">Before</p>
+          <a href="https://maps.app.goo.gl/oz5sTmeFX2k8pJgL9" target="_blank" rel="noopener">
+            <img src="https://i.postimg.cc/vHcFxbdy/idiguam_googlemaps.png" alt="Before - Basic Google Maps listing"
+              class="w-full rounded-xl border border-red-200 shadow-sm hover:shadow-md transition-shadow">
+          </a>
+          <p class="text-xs text-gray-500 text-center">Basic Google Maps listing</p>
+        </div>
+        <div class="space-y-2">
+          <p class="text-sm font-medium text-green-600">After (24 hours later)</p>
+          <a href="https://idiguam.vercel.app/" target="_blank" rel="noopener">
+            <img src="https://i.postimg.cc/rm87VL9C/idiguam_vercel_app_screenshot.png"
+              alt="After - Professional website"
+              class="w-full rounded-xl border border-green-200 shadow-sm hover:shadow-md transition-shadow">
+          </a>
+          <p class="text-xs text-gray-500 text-center">Professional website live</p>
         </div>
       </div>
     </section>
 
-    <!-- Proof of Work Card -->
-    <section class="bg-white rounded-2xl border border-gray-200 p-6">
+    <!-- Proof of Work Card (Full Width) -->
+    <section class="bg-white rounded-2xl border border-gray-200 p-6 mb-4">
       <h2 class="font-bold text-lg mb-3">Recent Work</h2>
       <p class="text-gray-600 mb-4">See what I've built for other businesses:</p>
       <a href="https://idiguam.vercel.app" target="_blank" rel="noopener"
@@ -298,7 +353,81 @@
       </a>
     </section>
 
-    <!-- FAQ Card -->
+    <!-- Guarantee + Pricing Row -->
+    <div class="grid md:grid-cols-2 gap-4 mb-4">
+      <!-- Guarantee Card (Skin in the game - ABOVE pricing) -->
+      <section class="bg-white rounded-2xl border border-gray-200 p-6">
+        <div class="flex flex-col sm:flex-row gap-4 items-center sm:items-start">
+          <img src="https://i.postimg.cc/XYFh4cZQ/merlion.jpg" alt="Adam Tomas"
+            class="w-32 h-32 rounded-xl object-cover object-top border-2 border-gray-100 shadow-lg flex-shrink-0">
+          <div class="text-center sm:text-left">
+            <h2 class="font-bold text-lg mb-1">My Promise</h2>
+            <p class="text-gray-600 text-sm mb-2">
+              Live in 24 hours or you don't pay. I'm not a faceless agency. I'm Adam, and I personally build every site.
+            </p>
+            <p class="text-sm font-medium text-gray-900">Adam CEO of <a href="https://anchormarianas.com"
+                target="_blank" rel="noopener" class="text-green-600 hover:underline">Anchor</a></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Card -->
+      <section class="bg-gray-900 text-white rounded-2xl p-6">
+        <div class="flex items-start justify-between mb-3">
+          <div>
+            <p class="text-sm text-gray-400">sitefast.pro 24h Package</p>
+            <div class="flex items-baseline gap-2">
+              <span class="text-2xl font-bold">$1,000</span>
+              <span class="text-gray-500 line-through text-sm">$2,000</span>
+            </div>
+          </div>
+          <span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">50% OFF</span>
+        </div>
+        <ul class="space-y-1 mb-4 text-gray-300 text-sm">
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-green-400" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd" />
+            </svg>
+            <span>Professional 1-page website</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-green-400" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd" />
+            </svg>
+            <span>24-hour delivery guarantee</span>
+          </li>
+        </ul>
+        <a href="https://buy.stripe.com/9B63cv7Z068B6ogfgZaMU0c" target="_blank" rel="noopener"
+          class="block w-full bg-white text-gray-900 text-center font-semibold py-2.5 rounded-xl hover:bg-gray-100 transition-colors text-sm">
+          💳 Pay Now & Get Started →
+        </a>
+      </section>
+    </div>
+
+    <!-- CTA Card (Full Width) -->
+    <section class="bg-white rounded-2xl border border-gray-200 p-6 mb-4">
+      <h2 class="font-bold text-lg mb-2">Ready to Get Found?</h2>
+      <p class="text-gray-600 mb-4 text-sm">
+        Message me now or schedule a call.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3">
+        <a href="https://wa.me/16716862020?text=Hi%20Adam%2C%20I'm%20interested%20in%20the%20sitefast.pro%20package"
+          target="_blank" rel="noopener"
+          class="btn-primary flex-1 flex items-center justify-center gap-2 bg-green-600 text-white font-semibold px-4 py-2.5 rounded-full hover:bg-green-700 text-sm">
+          💬 WhatsApp
+        </a>
+        <a href="https://calendly.com/adamtpang" target="_blank" rel="noopener"
+          class="btn-primary flex-1 flex items-center justify-center gap-2 bg-gray-100 text-gray-900 font-semibold px-4 py-2.5 rounded-full hover:bg-gray-200 text-sm">
+          📅 Schedule Call
+        </a>
+      </div>
+    </section>
+
+    <!-- FAQ Card (Full Width - at bottom) -->
     <section class="bg-white rounded-2xl border border-gray-200 p-6">
       <h2 class="font-bold text-lg mb-4">Frequently Asked Questions</h2>
       <div class="space-y-4">
@@ -315,17 +444,6 @@
         </details>
         <details class="group">
           <summary class="flex items-center justify-between cursor-pointer font-medium text-gray-900">
-            What if I already have a Google listing?
-            <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none"
-              stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </summary>
-          <p class="mt-2 text-gray-600 text-sm">Perfect! I'll optimize your existing listing with better photos,
-            keywords, and descriptions to help you rank higher.</p>
-        </details>
-        <details class="group">
-          <summary class="flex items-center justify-between cursor-pointer font-medium text-gray-900">
             How does the 24-hour guarantee work?
             <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none"
               stroke="currentColor" viewBox="0 0 24 24">
@@ -335,92 +453,59 @@
           <p class="mt-2 text-gray-600 text-sm">Your website goes live within 24 hours of receiving your info. If I
             don't deliver, you get a full refund—no questions asked.</p>
         </details>
-        <details class="group">
-          <summary class="flex items-center justify-between cursor-pointer font-medium text-gray-900">
-            Are there any ongoing costs?
-            <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none"
-              stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </summary>
-          <p class="mt-2 text-gray-600 text-sm">Hosting is $20/month after the first year (first year included). Google
-            Maps profile is free forever.</p>
-        </details>
-      </div>
-    </section>
-
-    <!-- CTA Card -->
-    <section class="bg-white rounded-2xl border border-gray-200 p-6">
-      <h2 class="font-bold text-lg mb-2">Ready to Get Found?</h2>
-      <p class="text-gray-600 mb-4">
-        Message me now, schedule a call, or pay to get started immediately.
-      </p>
-      <div class="flex flex-col gap-3">
-        <a href="https://wa.me/16716862020?text=Hi%20Adam%2C%20I'm%20interested%20in%20the%20sitefast.pro%20package"
-          target="_blank" rel="noopener"
-          class="btn-primary flex items-center justify-center gap-2 bg-green-600 text-white font-semibold px-6 py-3 rounded-full hover:bg-green-700">
-          💬 WhatsApp (Fastest)
-        </a>
-        <a href="https://calendly.com/adamtpang" target="_blank" rel="noopener"
-          class="btn-primary flex items-center justify-center gap-2 bg-gray-100 text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-gray-200">
-          📅 Schedule a Call
-        </a>
-        <a href="https://buy.stripe.com/9B63cv7Z068B6ogfgZaMU0c" target="_blank" rel="noopener"
-          class="btn-primary flex items-center justify-center gap-2 bg-black text-white font-semibold px-6 py-3 rounded-full">
-          💳 Pay $1,000 & Start Now
-        </a>
       </div>
     </section>
 
   </main>
 
   <!-- Footer -->
-  <footer class="border-t border-gray-200 bg-white">
-    <div class="max-w-3xl mx-auto px-5 py-8">
-      <div class="grid sm:grid-cols-3 gap-6 mb-6">
+  <footer class="bg-gray-900 text-white">
+    <div class="max-w-4xl mx-auto px-5 py-8">
+      <div class="grid sm:grid-cols-2 gap-6 mb-6">
         <div>
-          <p class="font-semibold text-gray-900 mb-2">📍 sitefast.pro</p>
-          <p class="text-sm text-gray-500">Get found on Google Maps in 24 hours.</p>
+          <p class="font-semibold text-white mb-2">📍 sitefast.pro</p>
+          <p class="text-sm text-gray-400">Get a professional website in 24 hours.</p>
         </div>
         <div>
-          <p class="font-medium text-gray-900 mb-2">Contact</p>
-          <a href="https://wa.me/16716862020" class="block text-sm text-gray-500 hover:text-gray-900">💬 WhatsApp</a>
-          <a href="mailto:adam@sitefast.pro" class="block text-sm text-gray-500 hover:text-gray-900">✉️
-            adam@sitefast.pro</a>
-          <a href="https://calendly.com/adamtpang" class="block text-sm text-gray-500 hover:text-gray-900">📅 Schedule a
+          <p class="font-medium text-white mb-2">Contact</p>
+          <a href="https://wa.me/16716862020" class="block text-sm text-gray-400 hover:text-white">💬 WhatsApp</a>
+          <a href="mailto:adam@anchormarianas.com" class="block text-sm text-gray-400 hover:text-white">✉️
+            adam@anchormarianas.com</a>
+          <a href="https://calendly.com/adamtpang" class="block text-sm text-gray-400 hover:text-white">📅 Schedule a
             Call</a>
         </div>
-        <div>
-          <p class="font-medium text-gray-900 mb-2">Quick Links</p>
-          <a href="https://anchormarianas.com" class="block text-sm text-gray-500 hover:text-gray-900">Anchor
-            Marianas</a>
-          <a href="https://idiguam.vercel.app" class="block text-sm text-gray-500 hover:text-gray-900">IDI Guam
-            (Portfolio)</a>
-        </div>
       </div>
-      <div class="border-t border-gray-100 pt-4 flex items-center justify-between text-sm text-gray-400">
+      <div class="border-t border-gray-700 pt-4 flex items-center justify-between text-sm text-gray-500">
         <p>© 2024 sitefast.pro. All rights reserved.</p>
         <p>Built by <a href="https://adamtomas.fun" target="_blank" rel="noopener"
-            class="text-gray-600 hover:underline">Adam Tomas</a></p>
+            class="text-gray-400 hover:text-white">Adam Tomas</a></p>
       </div>
     </div>
   </footer>
 
-  <!-- Countdown Timer Script -->
+  <!-- Scripts -->
   <script>
+      // Countdown Timer
       (function () {
-        // Jan 1, 2025 at 11:59:59 PM
-        const targetDate = new Date('2025-01-01T23:59:59').getTime();
+        // Target: January 1, 2025 at 11:59:59 PM local time
+        const targetDate = new Date(2025, 0, 1, 23, 59, 59).getTime();
 
         function updateCountdown() {
           const now = new Date().getTime();
           const diff = targetDate - now;
 
+          const daysEl = document.getElementById('days');
+          const hoursEl = document.getElementById('hours');
+          const minutesEl = document.getElementById('minutes');
+          const secondsEl = document.getElementById('seconds');
+
+          if (!daysEl || !hoursEl || !minutesEl || !secondsEl) return;
+
           if (diff <= 0) {
-            document.getElementById('days').textContent = '0';
-            document.getElementById('hours').textContent = '0';
-            document.getElementById('minutes').textContent = '0';
-            document.getElementById('seconds').textContent = '0';
+            daysEl.textContent = '0';
+            hoursEl.textContent = '0';
+            minutesEl.textContent = '0';
+            secondsEl.textContent = '0';
             return;
           }
 
@@ -429,13 +514,15 @@
           const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
           const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-          document.getElementById('days').textContent = days;
-          document.getElementById('hours').textContent = hours;
-          document.getElementById('minutes').textContent = minutes;
-          document.getElementById('seconds').textContent = seconds;
+          daysEl.textContent = days;
+          hoursEl.textContent = hours;
+          minutesEl.textContent = minutes;
+          secondsEl.textContent = seconds;
         }
 
+        // Run immediately
         updateCountdown();
+        // Update every second
         setInterval(updateCountdown, 1000);
       })();
 
@@ -445,8 +532,9 @@
       const lastDay = new Date(now.getFullYear(), now.getMonth() + 1, 0).getDate();
       const today = now.getDate();
       const daysLeft = lastDay - today;
-      const spotsLeft = Math.max(1, daysLeft); // At least 1 spot
-      document.getElementById('spots-left').textContent = spotsLeft;
+      const spotsLeft = Math.max(1, daysLeft);
+      const spotsEl = document.getElementById('spots-left');
+      if (spotsEl) spotsEl.textContent = spotsLeft;
     })();
   </script>
 
