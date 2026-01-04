@@ -583,10 +583,32 @@
         </div>
     </div>
 
+    <!-- Load API keys from config (local dev) -->
+    <script src="../config.js"></script>
     <script>
-        const PSI_API_KEY = 'AIzaSyBjsQkGsTD0igGUCrFuCtvwYgP5CAfr6ao';
-        const GEMINI_API_KEY = 'AIzaSyAhPoCXvTasMVKoPrTxYssF3w8_5MedxSc';
+        // API keys - loaded from Vercel env vars or local config.js
+        let GEMINI_API_KEY = '';
+        let PSI_API_KEY = 'AIzaSyBjsQkGsTD0igGUCrFuCtvwYgP5CAfr6ao';
         const WORKER_BASE_URL = 'https://sitefast-edge.adamtpangelinan.workers.dev';
+
+        // Try to load from Vercel API (env vars), fallback to local config
+        async function loadApiKeys() {
+            try {
+                const res = await fetch('/api/keys');
+                if (res.ok) {
+                    const keys = await res.json();
+                    if (keys.gemini) GEMINI_API_KEY = keys.gemini;
+                    if (keys.psi) PSI_API_KEY = keys.psi;
+                    return;
+                }
+            } catch (e) { }
+
+            // Fallback to local config.js
+            if (typeof CONFIG !== 'undefined') {
+                GEMINI_API_KEY = CONFIG.GEMINI_API_KEY || '';
+                PSI_API_KEY = CONFIG.PSI_API_KEY || PSI_API_KEY;
+            }
+        }
 
         const $ = id => document.getElementById(id);
         let originalMetrics = null;
@@ -763,7 +785,8 @@
         $('urlInput').addEventListener('keypress', e => { if (e.key === 'Enter') runOptimization(); });
         $('testOptimizedBtn').onclick = testOptimizedSite;
 
-        setStatus('idle', 'Ready');
+        // Load API keys then set ready
+        loadApiKeys().then(() => setStatus('idle', 'Ready'));
     </script>
 </body>
 
